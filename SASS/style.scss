@@ -1,0 +1,17 @@
+@import"./utilts/vars";
+@import"./components-index/header";
+@import"./components-index/main";
+@import"./components-index/footer";
+@import"./portfolio-components/header";
+@import"./portfolio-components/main";
+@import"./portfolio-components/footer";
+
+html{
+    width: 100%;
+}
+.container{
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+    font-family: Roboto;
+}

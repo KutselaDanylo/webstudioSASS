@@ -1,10 +1,15 @@
+
 .decorativ-ul{
+    width: 390px;
     margin-top: 94px;
     margin-bottom: 50px;
-    gap: 8px;
+    display: flex;
+    flex-direction: column;
+}
+.decorativ-li{
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    gap: 8px;
 }
 .main-button{
     font-size: 16px;
@@ -27,43 +32,63 @@
     margin: 8px;
     background-color: $hover-color;
     color: $fourth-color;
-}   .ul-flex{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-bottom: 100px;   
-}
+}   
 .ul-flex-div{
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+}
+.ul-flex{
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.div-ul-flex{
     display: flex;
     flex-direction: row;
     justify-content: inline;
     gap: 10px;
     margin-top: 50px;
     margin-left: -200px;
-}   .ul-flex{
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
+}   
+.main-div{
+    width: 370px;
+    height: 110px;
+    margin-top: 0px;
+    padding-bottom: 25px;
+    padding-top: 20px;
+    padding-left: 25px;
+    border-right: solid 1px $sixt-color;
+    border-bottom:  solid 1px $sixt-color;
+    border-left:  solid 1px $sixt-color;
+}
+.third-ul-itam{
+    width: 450px;
 }
 .third-ul-itam:hover{
+    overflow: hidden;
+    position: relative;
+    height: 100%;
+    width: 370px;
     box-shadow: 1px 1px 2px;
     transition-duration: 500ms;
     transition-delay: 10ms;
     transition-timing-function: cubic-bezier(0.83, -0.08, 0.32, 1);
+    background-color: red;
     .z-index-div{
-        animation-name: portfolioSlider;
-        transition-duration: 500ms;
-        transition-delay: 10ms;
+        z-index: 6;
         position: absolute;
-        width: 370px;
         height: 294px;
-        z-index: 3;
-        display: block;
-        max-width: max-content;
+        width: 370px;
+        bottom: -100%;
+        transition: 1s all;
+        opacity: 0.5;
         background-color:$hover-color;
     }
 }
 .z-index-div{
+    margin-top: -1000px;
     padding: 63px 24px 59px 24px;
     font-size: 18px;
     font-weight: 400;
@@ -78,19 +103,7 @@
     z-index: 1;
 }
 .third-ul-itam-hover{
-    position: absolute;
-    z-index: 2;
-}
-.main-div{
-    width: 370px;
-    height: 110px;
-    margin-top: 300px;
-    padding-bottom: 25px;
-    padding-top: 20px;
-    padding-left: 25px;
-    border-right: solid 1px $sixt-color;
-    border-bottom:  solid 1px $sixt-color;
-    border-left:  solid 1px $sixt-color;
+    z-index: 5;
 }
 .h4-class{
     color: $third-color;

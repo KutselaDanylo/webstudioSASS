@@ -1,36 +1,36 @@
-.overlay-cont{
-    @media screen and (min-width:768px){
-    }
-}
-.main-cont{
-    @media screen and (min-width:768px){
-        .flex-img{
-            display: none;
-        }
-    }
-}
-.div-cont{
-    @media screen and (min-width:768px){
-
-    }
-}
 .hidden{
     display: none;
+    @media screen and (min-width:1200px){
+        display: block;
+    }
+.flex-li{
+    display: flex;
+    flex-direction: row;
+    gap: 400px;
 }
-.main-li{
-    width: 480px;
-    background-color:  $fourth-color;
-    box-shadow: 0px 1px 1px $second-color;
-    border-radius: 4px;
-    justify-content: center;
-    margin-bottom: 30px;
 }
-.Наша-команда-class{
+.comand{
+    @media screen and (min-width:768px){
+        display: flex;
+        flex-direction: column;
+    }
+    @media screen and (min-width:1200px){
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+    }
+    display: flex;
+    flex-direction: column;
     background-color: $fift-color;
     width: 100%;
     align-content: center;
 }
 .main-ul{
+    @media screen and (min-width:1200px){
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+    }
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -38,18 +38,52 @@
 .main-p{
     text-align: center;
 }
+.ul-div-li{
+    @media screen and (min-width:768px){
+        display: flex;
+        flex-direction: row;
+    }
+    @media screen and (min-width:1200px){
+        gap: 30px;
+    }
+    display: flex;
+    flex-direction: column;
+}
 .li-img{ 
+    @media screen and (min-width:768px){
+        width: 354px;
+    }
+    @media screen and (min-width:1200px){
+        width: 270px;
+    }
    justify-content: center;
    width: 480px;
 }
+.main-li{
+    @media screen and (min-width:768px){
+        width: 354px;
+    }
+    @media screen and (min-width:1200px){
+        width: 270px;
+    }
+    width: 480px;
+    background-color:  $fourth-color;
+    box-shadow: 0px 1px 1px $second-color;
+    border-radius: 4px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
 .div-asdf{  
+    width: 100%;
     gap: 42px;
 }
 .div-main{
-    max-width: 360px;
-    justify-content: center;
+    width: 360px;
+    margin: 0 auto;
+    margin-bottom: 41px;
 }
 .p{
+    width: 360px;
     font-size: 26px;
     font-weight: 900;
     line-height: 42px;
@@ -57,6 +91,11 @@
     // color: $fourth-color;
     color: red;
     margin: 0px;
+}
+.ul-div{
+    background-color: red;
+    justify-content: center;
+
 }
 .ul-flex{
     display: flex;
@@ -101,6 +140,9 @@ a{
 img{
     overflow-clip-margin:content-box 0px;
 }
+.flex-img{
+    display: none;
+}     
 .flex-item{
     font-size: 14px;
     font-weight: 400;
@@ -109,10 +151,23 @@ img{
     color: $second-color;
     line-height: 20px;
 }
-.main-ul-li{
-    width: 480px ;
+
+.li-div{
+    @media screen and (min-width:768px){
+    display: flex;
+    flex-direction: row;
+    }
 }
-.main-ul-li::before{
+.main-ul-div{
+    width: 480px;
+    @media screen and (min-width:768px){
+        max-width: 354px;
+    }
+    @media screen and (min-width:1200px){
+        width: 270px;
+    }
+}
+.main-ul-div::before{
     margin-top: 94px;
     content: " ";
     display: block;
@@ -120,24 +175,54 @@ img{
     height: 120px;
     border-radius: 3px;
     background-color: $fift-color;
+    @media screen and (min-width:1200px){
+        width: 270px;
+    }
 }
-.main-ul-li:first-child::before{
+.main-ul-div:first-child::before{
+    @media screen and (min-width:768px){
+        max-width: 345px;
+    }
+    @media screen and (min-width:1200px){
+        width: 270px;
+    }
     content: "";
     background-image:url(./img/antenna.svg);
     background-repeat: no-repeat;
     background-position: center;
+    @media screen and (min-width:768px){
+        max-width: 345px;
+    }
 }
-.main-ul-li:nth-child(2)::before{
+.main-ul-div:nth-child(2)::before{
+    @media screen and (min-width:768px){
+        max-width: 345px;
+    }
+    @media screen and (min-width:1200px){
+        width: 270px;
+    }
     background-image: url(./img/clock.svg);
     background-repeat:no-repeat;
     background-position: center;
 }
-.main-ul-li:nth-child(3)::before{
+.main-ul-div:nth-child(3)::before{
+    @media screen and (min-width:768px){
+        max-width: 345px;
+    }
+    @media screen and (min-width:1200px){
+        width: 270px;
+    }
     background-image: url(./img/Computer.svg);
     background-repeat:no-repeat;
     background-position: center;
 }
-.main-ul-li:nth-child(4)::before{
+.main-ul-div:nth-child(4)::before{
+    @media screen and (min-width:768px){
+        max-width: 345px;
+    }
+    @media screen and (min-width:1200px){
+        width: 270px;
+    }
     background-image: url(./img/astronaut.svg);
     background-repeat:no-repeat;
     background-position: center;
@@ -184,7 +269,7 @@ img{
     color:  $fourth-color;
     background-color:  rgba(47, 48, 58, 0.8);
 }
-.Наша-команда-flex{
+.comand-section{
     padding-bottom: 95px;
     margin-bottom: -16px;
     background-color:  $fift-color;
@@ -334,7 +419,6 @@ footer{
     justify-content: center;
 }
 .div-overall{
-    max-width: 1170px;
     max-height: 184px;
     margin-bottom: 89px;
     margin-top: 93px;
@@ -375,11 +459,13 @@ footer{
     padding: 4px 0px 4px 0px;
 }
 .svg-div{
+    margin-left: 30px;
+    margin-bottom: 30px;
     border: solid 1px $sevent-color;
     width: 170px;
     height: 92px;
     padding: 15px 31px 15px 31px;
-    border-radius: 10px;
+    border-radius: 5px;
 }
 .svg-div:hover{
     border: solid 1px $hover-color;
@@ -536,10 +622,28 @@ footer{
     margin-top: 20px;
 }
 .ul-li{
+        @media screen and (min-width:768px){
+            padding-left: 40px;
+            display: flex;
+            flex-direction: row;
+        }
+        @media screen and (min-width:1200px){
+            padding-left: 0px;
+        }
     display: flex;
     flex-direction: column;
 }
 .hero-div{
+    @media screen and (min-width:768px){
+        max-width: 738px;
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+    @media screen and (min-width:1200px){
+        display: flex;
+        flex-direction: row;
+    }
     display: flex;
     flex-direction: row;
     justify-content: center;

@@ -17,11 +17,7 @@
 color: $third-color;
 }
 .header-H1{
-font-family: Raleway;
-font-size: 26px;
-font-weight: 700;
-line-height: 30.52px;
-letter-spacing: 0.03em;
+  @include font-style('Raleway', 26px, 700, 30.52px);
 }
 .header-div{
   display: flex;
@@ -262,15 +258,6 @@ body {
   background-color: $fourth-color;
 }
 
-.container {
-  min-width: 320px;
-  max-width: 1170px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 .page-header .container {
   min-height: 80px;
   display: flex;
@@ -358,11 +345,7 @@ body {
   color: $third-color;
 }
 .mobile-li-a{
-font-family: Roboto;
-font-size: 40px;
-font-weight: 500;
-line-height: 46.88px;
-letter-spacing: 0.02em;
+  @include font-style('Roboto', 40px, 500, 46.88px);
 text-align: left;
 }
 .mobile-li-a:hover{

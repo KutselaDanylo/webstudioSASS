@@ -1,4 +1,5 @@
 @import"./utilts/vars";
+@import"./utilts/mixin";
 @import"./components-index/header";
 @import"./components-index/main";
 @import"./components-index/footer";
@@ -12,5 +13,8 @@ html{
     width: 100%;
     margin: 0 auto;
     padding: 0 15px;
-    font-family: Roboto;
+    // font-family: Roboto;
 }
+
+
+
